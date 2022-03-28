@@ -21,7 +21,5 @@ Installation instructions can be found at https://ext.ulauncher.io/about.
 
 Licensed under GNU General Public License v3.0 See LICENSE.
 
-The icons base on https://github.com/apancik/public-domain-icons.
-
 
 
