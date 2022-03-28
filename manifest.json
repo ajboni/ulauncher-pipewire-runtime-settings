@@ -1,0 +1,28 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "PipeWire Runtime Settings",
+  "description": "Change PipeWire runtime settings",
+  "developer_name": "ajboni",
+  "icon": "icons/pipewire.png",
+  "preferences": [
+    {
+      "id": "keyword",
+      "type": "keyword",
+      "name": "Pipewire Runtime Settings",
+      "default_value": "pw",
+      "description": "Change pipewire runtime settings"
+    },
+    {
+      "id": "available_buffer_sizes",
+      "type": "input",
+      "name": "Available buffer sizes",
+      "default_value": "32;64;128;256;512;1024;2048;4096;8192"
+    },
+    {
+      "id": "available_rates",
+      "type": "input",
+      "name": "Available Rates",
+      "default_value": "44100;48000;88200;96000;176400;192000"
+    }
+  ]
+}

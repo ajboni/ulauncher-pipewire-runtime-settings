@@ -1,0 +1,73 @@
+[
+  {
+    "keyword": "list",
+    "title": "List Settings",
+    "description": "List current runtime settings",
+    "command": "pw-metadata -n settings",
+    "label": "List current runtime settings"
+  },
+  {
+    "keyword": "sr",
+    "title": "Set Rate",
+    "description": "Set default sample rate.",
+    "command": "pw-metadata -n settings 0 clock.rate %",
+    "label": "Set default sample rate to: ",
+    "items": "available_rates"
+  },
+  {
+    "keyword": "fr",
+    "title": "Force Rate",
+    "description": "Force the sample rate to a specific value.",
+    "command": "pw-metadata -n settings 0 clock.force-rate %",
+    "label": "Force sample rate to: ",
+    "category": "rate",
+    "items": "available_rates"
+  },
+  {
+    "keyword": "rr",
+    "title": "Reset Rate",
+    "description": "Reset to default sample rate.",
+    "command": "pw-metadata -n settings 0 clock.force-rate 0",
+    "label": "Reset to default sample rate."
+  },
+  {
+    "keyword": "sq",
+    "title": "Set Quantum",
+    "description": "Set the default quantum.",
+    "command": "pw-metadata -n settings 0 clock.quantum %",
+    "label": "Set default quantum to: ",
+    "category": "buffer-size",
+    "items": "available_buffer_sizes"
+  },
+  {
+    "keyword": "fq",
+    "title": "Force Quantum",
+    "description": "Force the graph to operate in a fixed buffer-size",
+    "command": "pw-metadata -n settings 0 clock.force-quantum %",
+    "label": "Force quantum to: ",
+    "items": "available_buffer_sizes"
+  },
+  {
+    "keyword": "rq",
+    "title": "Reset Quantum",
+    "description": "Reset quantum to default",
+    "command": "pw-metadata -n settings 0 clock.force-quantum 0",
+    "label": "Reset quantum to default "
+  },
+  {
+    "keyword": "minq",
+    "title": "Min Quantum",
+    "description": "Set MIX quantum",
+    "command": "pw-metadata -n settings 0 clock.min-quantum %",
+    "label": "Set MIN quantum to: ",
+    "items": "available_buffer_sizes"
+  },
+  {
+    "keyword": "maxq",
+    "title": "Max Quantum",
+    "description": "Set MAX quantum",
+    "command": "pw-metadata -n settings 0 clock.max-quantum %",
+    "label": "Set MAX quantum to: ",
+    "items": "available_buffer_sizes"
+  }
+]
